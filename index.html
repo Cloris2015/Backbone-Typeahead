@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Backbone.js + Typeahead</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Backbone.js + Typeahead</h1>
+
+                <div class="error-container"></div>
+
+                <div class="type-ahead-container">
+                    <input type="search" class="search-state" placeholder="Search" />&nbsp;<input type="checkbox" class="sort-box" /> Descending
+                    <ul class="state-list list-group"></ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The template for error messages -->
+    <script type="text/template" id="error-template">
+        <p class="bg-danger"><%= error %></p>
+    </script>
+    <!-- The template for type ahead items -->
+    <script type="text/template" id="type-ahead-item-template">
+        <li class="list-group-item"><span class="badge"><%= abbreviation %></span><%= name %></li>
+    </script>
+
+
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootstrap3-typeahead.min.js"></script>
+    <script src="Scripts/underscore.min.js"></script>
+    <script src="Scripts/backbone.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
